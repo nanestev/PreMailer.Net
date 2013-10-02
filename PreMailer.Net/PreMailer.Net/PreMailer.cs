@@ -49,7 +49,7 @@ namespace PreMailer.Net
 						}
 
 						StyleClass sc = cssParser.ParseStyleClass("dummy", styleAttribute.Value);
-						sc.Merge(styleClass, false);
+						sc.Merge(styleClass, true);
 
 						styleAttribute.Value = sc.ToString();
 					}
